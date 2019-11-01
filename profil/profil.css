@@ -1,0 +1,409 @@
+@font-face{
+    font-family: 'Prototype';
+    src: url('font/Prototype.ttf');
+} 
+body{
+    background-color: #e0e0e0;
+}
+.nav {
+	position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 0px 2px;
+}
+#atas {
+    width: 100%;
+    height: 45px;
+    background-image: url('../atribut/atas.png');
+    background-size: cover;
+}
+
+#logo {
+	width: 45px; 
+	height: 45px;
+margin-top: -10px;}
+nav li {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    font-family: "Prototype";
+
+}
+nav li a {
+	color: white;
+}
+#idealku{
+	font-size: 34px;
+	color: white;
+}
+	
+
+
+#login{
+	float: right;
+    border-left: 7px solid white;
+    padding: 12px;
+
+}
+#daftar{
+	float: right;
+    padding: 12px;
+}
+
+/* navbar bawah */
+.navbar{
+   
+}
+
+.navbar-brand img {
+	width: 40px;
+	height: 40px;
+}
+.navbar-nav div{
+	padding-right: 40px; 
+}
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: -0.5rem;
+}
+.menu {
+	margin: auto;
+	 background-image: url('../atribut/nav.png');
+      background-size: cover;
+	    margin-top: -13px;
+    width: 90%;
+    border-radius: 10px ;
+}
+
+/* ini bagian body */
+.body {
+    width: 80%;
+    height: auto;
+    background: white;
+
+        margin: auto;
+    margin-top: 43px;
+}
+.profil{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+#profil{
+        margin-top: 15px;
+}
+.foto img {
+    margin: 10px;}
+.foto{
+}
+.foto img {
+    width: 90%;
+}
+.keterangan{
+    margin-top: 20px;
+
+}
+.table {
+    width: 90%;
+    margin: auto;
+}
+.grafik{
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.inputbox{
+  position: relative;
+}
+.inputbox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 30px;
+  border: none;
+  border: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+
+.inputbox span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #24cece;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.inputbox input:focus  ~ span,
+.inputbox input:valid  ~ span{
+  top: -18px;
+  left: 0;
+  color: #03a9f4;
+  font-size: 12px;
+}
+
+.masukan {
+      margin-left: 36px;
+  display: inline-block;
+  float: left;
+  }
+.masukan label input {
+  border: none;
+  text-align: center; 
+  box-shadow: 0 4px 2px -2px #d0d0d0;
+}
+
+
+
+.masukan label {
+        margin-top: 27px;
+    margin-left: 30px;
+    display: block;
+
+}
+.masukan label span {
+    display: block;
+    font-size: 23px;
+}
+
+
+/*Modal Login*/
+div.login_bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.596);
+    position: fixed;
+    display: flex;
+    top: 0;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    overflow: auto;
+}
+
+.login_konten {
+    width: 40%;
+    height: 450px;
+    border-radius: 10px;
+    background: white;
+    opacity: .95;
+}
+
+.tutup {
+    float: right;
+    margin-right: 10px;
+    font-size: 35pt;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.animasi {
+    animation: zoom 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.tutup:hover {
+    color: red;
+}
+
+img.logon {
+    width: 55%;
+    transform: translate(40%);
+    margin: 40px 0;
+}
+
+div.login-form {
+    margin: auto;
+    position: relative;
+    left: 10%;
+}
+
+div.input-box {
+    position: relative;
+}
+
+input.user, input.pass {
+    padding: 5px 0;
+    font-size: 15pt;
+    color: black;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid #b9b9b9;
+    background: transparent;
+    width: 80%;
+    outline: none;
+}
+
+.login-form .input-box label {
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: #302e2e;
+    font-size: 15pt;
+    padding: 5px 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login-form .input-box input:focus ~ label,
+.login-form .input-box input:valid ~ label {
+    top: -25px;
+    color: #358ac7;
+    font-size: 12pt;
+}
+
+span.cek {
+    color: #302e2e;
+    font-family: nyala;
+    font-size: 15pt;
+}
+
+button {
+    width: 80%;
+    padding: 7px 20px;
+    font-family: nyala;
+    font-size: 15pt;
+    border: none;
+    color: white;
+    background-color: #4989d3f8;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #2b6db8f8;
+    box-shadow: 0px 0px 10px #302e2e;
+    transition: 0.5s;
+}
+
+p.register {
+    margin-top: 20px;
+    text-align: center;
+    transform: translate(-10%);
+    color: black;
+    font-family: nyala;
+    font-size: 15pt;
+}
+
+p.register a {
+    text-decoration: none;
+    color: #4989d3f8;
+}
+
+p.register a:hover {
+    color: #2b6db8f8;
+}
+
+/*Modal Register*/
+div.register_bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.596);
+    position: fixed;
+    display: flex;
+    top: 0;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.register_konten {
+    width: 40%;
+    height: 470px;
+    border-radius: 10px;
+    background: white;
+    opacity: .95;
+}
+
+div.register-form {
+    margin: auto;
+    position: relative;
+    left: 10%;
+}
+
+div.input-box {
+    position: relative;
+}
+
+input.username, input.password {
+    padding: 5px 0;
+    font-size: 15pt;
+    color: #302e2e;
+    margin-bottom: 24px;
+    border: none;
+    border-bottom: 1px solid #302e2e;
+    background: transparent;
+    width: 80%;
+    outline: none;
+}
+
+.register-form .input-box label {
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: #302e2e;
+    font-size: 15pt;
+    padding: 5px 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.register-form .input-box input:focus ~ label,
+.register-form .input-box input:valid ~ label {
+    top: -25px;
+    color: #4989d3cc;
+    font-size: 12pt;
+}
+
+p.login {
+    margin-top: 20px;
+    text-align: center;
+    transform: translate(-10%);
+    color: #302e2e;
+    font-family: nyala;
+    font-size: 15pt;
+}
+
+p.login a {
+    text-decoration: none;
+    color: #4989d3f8;
+}
+
+p.login a:hover {
+    color: #2b6db8f8;
+}
+
+/*back to top*/
+div.backTop {
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 100%;
+    position: fixed;
+    background: #3589B2;
+    text-align: center;
+}
+
+.backTop img {
+    margin-top: 12px;
+}
+
+.backTop:hover {
+    cursor: pointer;
+    background: rgb(240, 57, 81);
+}

@@ -1,0 +1,113 @@
+@font-face{
+    font-family: 'Prototype';
+    src: url('font/Prototype.ttf');
+} 
+body{
+	background-color: #e0e0e0;
+}
+#daftar img {
+	width: 45px;
+	margin-top: -11px;
+
+}
+.body {
+	width: 90%;
+	margin: auto;
+}
+
+.tips{
+	width: 100%;
+	background: white;
+	border-radius: 30px ;
+
+}
+/* tips atas */
+.tips_atas{
+	display: grid;
+	grid-template-columns: 60% 40%;
+	margin: auto;
+}
+.tips_atas img {
+	width: 100%;
+	height: 400px;	
+}
+.judul_kesehatan{
+	margin-left: 15px;
+}
+
+/* tips bawah */
+.tips_bawah {
+	margin-top: 20px;	
+	display: grid;
+	grid-template-columns: 33.333% 33.333% 33.333%;
+}
+.tips_kecil{
+	width: 90%;
+	margin: auto;
+	border: 1px solid #e8e8e8;
+
+}
+.tips_kecil img{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+
+
+/* menu kategori */
+  .menu_atas {
+	display: grid;
+	grid-template-columns: 33% 34% 33%;
+	margin: auto;
+	 background:white;
+      background-size: cover;
+    width: 100%;
+    border-radius: 30px ;
+    padding-bottom: 100px;
+}
+.kurus{
+	text-align: center;
+	width: 45%;
+	margin: auto;
+	display: inline-block;
+}
+.kurus img {
+	    width: 150px;
+    height: 400px; 
+}
+.gemuk {
+	width: 45%;
+	margin: auto;
+	text-align: center;
+
+	display: inline-block;
+}
+.gemuk img {
+	    width: 290px;
+	        height: 400px;
+}
+
+.menu_atas a {
+        background-color: #d2ede5;
+  box-shadow: 0 5px 0 #7ce3c9;
+  color: white;
+      padding: 12em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu_atas a:hover {
+  background-color: darkcyan;
+  cursor: pointer;
+}
+
+.menu_atas a:active {
+	    background: darkcyan;
+  box-shadow: none;
+  top: 5px;
+}
+.body {
+	
+}

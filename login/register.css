@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../atribut/jogging.jpg);
+    background-size: cover;
+
+}
+
+
+@font-face {
+    font-family: "nyala";
+    src: url('font/nyala.ttf');
+}
+
+div.contain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35%;
+    height: 548px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+div.contain:hover {
+    box-shadow: 0px 0px 10px #252525b2;
+}
+
+img.logo {
+    width: 55%;
+    transform: translate(40%);
+    margin: 40px 0;
+    opacity: 0.8;
+}
+
+div.register-form {
+    margin: auto;
+    position: relative;
+    left: 10%;
+}
+
+div.input-box {
+    position: relative;
+}
+
+input[type="text"], input[type="password"],input[type="email"] {
+    padding: 5px 0;
+    font-size: 15pt;
+    color: #ffffff;
+    margin-bottom: 24px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    width: 80%;
+    outline: none;
+}
+
+.register-form .input-box label {
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: #ffffff;
+    font-size: 15pt;
+    padding: 5px 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.register-form .input-box input:focus ~ label,
+.register-form .input-box input:valid ~ label {
+    top: -25px;
+    color: #4989d3cc;
+    font-size: 12pt;
+}
+
+button {
+    width: 80%;
+    padding: 7px 20px;
+    font-family: nyala;
+    font-size: 15pt;
+    border: none;
+    color: #ffffff;
+    background-color: #a07676;
+    border-radius: 10px;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #724949;
+    box-shadow: 0px 0px 10px #302e2e;
+    transition: 0.5s;
+}
+
+p.register {
+    margin-top: 20px;
+    text-align: center;
+    transform: translate(-10%);
+    color: #ffffff;
+    font-family: nyala;
+    font-size: 15pt;
+}
+
+p.register a {
+    text-decoration: none;
+    color: #a07676;
+}
+
+p.register a:hover {
+    color: #724949;
+}
+
+img.logo{
+    width: 15%;
+}

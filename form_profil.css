@@ -1,0 +1,129 @@
+@font-face{
+    font-family: 'Prototype';
+    src: url('font/Prototype.ttf');
+} 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(atribut/jogging.jpg);
+    background-size: cover;
+}
+
+@font-face {
+    font-family: "nyala";
+    src: url('font/nyala.ttf');
+}
+.input-box input::-webkit-input-placeholder{
+    color: white;
+}
+div.contain {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35%;
+    height: 440px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.596);
+}
+
+div.contain:hover {
+    box-shadow: 0px 0px 10px #252525b2;
+}
+
+img.logo {
+    width: 55%;
+    transform: translate(40%);
+    margin: 40px 0;
+    opacity: 0.8;
+}
+
+div.login-form {
+    margin: auto;
+    position: relative;
+    left: 10%;
+}
+
+div.input-box {
+    position: relative;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 5px 0;
+    font-size: 15pt;
+    color: #ffffff;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    width: 80%;
+    outline: none;
+}
+
+.login-form .input-box label {
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: #ffffff;
+    font-size: 15pt;
+    padding: 5px 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login-form .input-box input:focus ~ label,
+.login-form .input-box input:valid ~ label {
+    top: -25px;
+    color: #358ac7;
+    font-size: 12pt;
+}
+
+
+span.cek {
+    color: #ffffff;
+    font-family: nyala;
+    font-size: 15pt;
+}
+
+button {
+    width: 80%;
+    padding: 7px 20px;
+    font-family: nyala;
+    font-size: 15pt;
+    border: none;
+    color: white;
+    background-color: #be6f06;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #a35e03;
+    box-shadow: 0px 0px 10px #302e2e;
+    transition: 0.5s;
+}
+
+p.register {
+    margin-top: 20px;
+    text-align: center;
+    transform: translate(-10%);
+    color: #ffffff;
+    font-family: nyala;
+    font-size: 15pt;
+}
+
+p.register a {
+    text-decoration: none;
+    color: #be6f06;
+}
+
+p.register a:hover {
+    color: #a35e03;
+}
+

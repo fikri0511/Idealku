@@ -1,0 +1,62 @@
+@font-face{
+    font-family: 'Prototype';
+    src: url('font/Prototype.ttf');
+} 
+body{
+    background-color: #e0e0e0;
+}
+#daftar a img {
+      width: 31px;
+}
+
+/*bodynya */
+.body {
+	margin: auto;
+	 background:white;
+      background-size: cover;
+    width: 90%;
+    border-radius: 30px ;
+    padding-bottom: 100px;
+}
+.kurus{
+	text-align: center;
+	width: 45%;
+	margin: auto;
+	display: inline-block;
+}
+.kurus img {
+	    width: 150px;
+    height: 400px; 
+}
+.gemuk {
+	width: 45%;
+	margin: auto;
+	text-align: center;
+
+	display: inline-block;
+}
+.gemuk img {
+	    width: 290px;
+	        height: 400px;
+}
+
+.body a {
+        background-color: #d2ede5;
+  box-shadow: 0 5px 0 #7ce3c9;
+  color: white;
+      padding: 12em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.body a:hover {
+  background-color: darkcyan;
+  cursor: pointer;
+}
+
+.body a:active {
+	    background: darkcyan;
+  box-shadow: none;
+  top: 5px;
+}
